@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                		bat "D:\\Git Traning\\Tools\\nuget\\nuget.exe restore"
+                		bat '"D:\\Git Traning\\Tools\\nuget\\nuget.exe" restore'
 				bat '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\amd64\\MSBuild.exe" Bank\\Bank.csproj'
 				bat '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\amd64\\MSBuild.exe" BankTest\\BankTest.csproj'
             }
